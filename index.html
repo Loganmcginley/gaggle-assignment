@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+<head>
+<title>Gaggle Assignment</title>
+<link rel="stylesheet" href="styles.css">
+
+<meta name="description" content="Our first page">
+<meta name="keywords" content="html Gaggle template">
+</head>
+<body>
+    <div class="container">
+    <div class="left">
+        <div class="centered">
+            <form action="action_page.php" method="post">
+                <div class="imgcontainer">
+                </div>
+                <div class="container">
+                    <div class="container-username">
+                        <span>Username</span><input type="text" name="uname" required>
+                        </div>
+                <div class="container-password"><span>Password</span><span class="hideIcon"><img src="./imgs/icon--eye-closed.svg">Hide</span>
+                    <input type="password" name="psw" required id="password">
+                    </div>
+                    <div class="labelLeft"><input class="checkBox" type="checkbox" value="lsRememberMe">
+                    <label class="rememberLabel" for="rememberMe">Remember</label></div>     
+                    <button id="uniqueButton" type="submit">Sign On</button>
+                </div>          
+            </div></form>
+            <div class="registerForget">
+                <button class="main-btn"><a ref='#'>Register</a></button>
+                <button class="forget-btn"><a ref='#'>Forget Password?</a></button>
+            </div>
+            
+        </div>
+        <div class="right">
+            <div class="centered-right">
+            </div>
+
+            <!-- MODAL -->
+
+        <div class="modal" id="email-modal">
+            <div class="modal-content">
+                <div class="model-content-right">
+                    <form action="/" method="GET" class="modal-form" id="form">
+                    <h1>New Account</h1>
+                    <div class="form-validation">
+                        <input type="text" class="modal-input" id="name" name="username" placeholder="Username">
+                        <p>Error Message</p>
+                        <div class="form-validation">
+                            <input type="email" class="modal-input" id="email" name="email" placeholder="Email">
+                            <p>Error Message</p>
+                            <div class="form-validation">
+                                <div class="passwordHide">
+                                    <p>Error Message</p>
+                              <input type="password" class="modal-input" id="password" name="password" placeholder="Password"><span class="hideIcon"><img src="./imgs/icon--eye-closed.svg">Hide</span></div>
+                            </div>
+                            <input type="button" class="close-btn" value="Cancel">
+                            <input type="submit" class="modal-input-btn" value="Register Account"></form>
+                        </form>
+                </div>
+            </div>
+        </div>    
+
+
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

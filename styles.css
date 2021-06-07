@@ -1,0 +1,153 @@
+@import url('modal.css');
+
+/* Split the screen in half */
+body {
+    height: 100%;
+    width: 100%;
+}
+
+html {
+    height: 100%;
+    width: 100%; 
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+}
+  
+  .left {
+    float: left;
+    position: relative;
+    height: 100%;
+    width: 50%;
+    left: 0;
+    background-color: ghostwhite;
+  }
+  
+  .right {
+    float: right;
+    position: relative;
+    height: 100%;
+    width: 50%;
+    right: 0;
+    background: url(./imgs/hero-image.png);
+    background-size: cover; 
+  }
+  
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .centered img {
+    width: 150px;
+    border-radius: 50%;
+  }
+
+  .container-username, .container-password {
+    width: 267px;
+    height: 40px;
+    opacity: 100%;
+    Radius: 3px;
+    Color: #FFFFFF 90%;
+    box-shadow: 0px 1px 2px 0.5px rgba(0,0,0,0.3);
+    border: 1px solid rgba(255,255,255,.16);   
+  }
+  
+
+  .container-password input, .container-username input {
+      width: 100%;
+      height: 100%; 
+      border: none;
+  }
+
+  .container-username-one, .container-password-one {
+    width: 100%;
+    height: 100%
+  }
+  .container-username {
+    margin-bottom: 8px;
+    font-size: 12px;
+  }
+
+  .container-password {
+    position: relative;
+    margin-bottom: 8px;
+    font-size: 12px;
+  }
+
+  .container-username span, .container-password span {
+      position: absolute;
+      color: rgba(0,0,0,0.7)
+  }
+
+  .hideIcon {
+    position: absolute;
+    top:0;  
+    right: 0;
+    color: rgba(0,0,0,0.7)
+    
+}
+
+  .centered img {
+      width: 11.9px;
+      margin-right: 3px;
+  }
+.checkBox {
+    width: 12;
+    height: 12px;
+    border-radius: 3px;
+    color: rgba(0,0,0,0.7)
+}
+
+.labelLeft {
+    text-align: left;
+
+}
+.rememberLabel {
+    width: 60px;
+    height: 12px;
+    opacity: 100%;
+    color: #000000 70%;
+    font-size: 12px;
+}
+
+#uniqueButton {
+    text-align: left;
+    left: 349px;
+    top: 435px;
+    width: 103px;
+    height: 32px;
+    opacity: 100%;
+    border-radius: 3px solid;
+    background: #263A91 100%;
+    color: white;
+    box-shadow: 0px 1px 2px 0.5px #000000 30%;
+}
+
+.registerForget {
+    position:absolute;
+    width: 100%;
+    left: 0%;
+    bottom: 5%;
+    text-align: center;
+    
+}
+
+.registerForget .main-btn, .registerForget .forget-btn {
+    border: none;
+    background: none;
+    color: #263A91;
+    cursor: pointer;
+    padding: 3px;
+    padding-right: 7.5px;
+}
+.registerForget .main-btn {
+    border-right: 1px solid rgba(0,0,0,0.2);
+}
+
+
